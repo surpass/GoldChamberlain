@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding="utf-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="zh-CN"
+	 xmlns:xlink="http://www.w3.org/1999/xlink"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>PLT.9 Window States 窗口状态</title>	
+	<para>
+		。。。
+	</para>
+		<section>
+			<title>PLT.9.1 NORMAL Window State </title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.9.2 MAXIMIZED Window State 最大化窗口</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.9.3 MINIMIZED Window State 最小化窗口</title>
+			<para>
+				。。。
+			</para>
+		</section>	
+		<section>
+			<title>PLT.9.4 Custom Window States自定义窗口状态</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.9.5 Defining Window State Support.定认窗口状态支持</title>
+			<para>
+				。。。
+			</para>
+		</section>
+</chapter>

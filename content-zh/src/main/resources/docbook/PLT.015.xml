@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding="utf-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="zh-CN"
+	 xmlns:xlink="http://www.w3.org/1999/xlink"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>PLT.15 Coordination between portlets</title>	
+	<para>
+		...
+	</para>
+		<section>
+			<title>PLT.15.1 Public Render Parameters</title>
+			<para>
+				...
+			</para>
+		</section>
+		<section>
+			<title>PLT.15.2 Portlet 事件</title>
+			<para>
+				...
+			</para>
+			<section>
+				<title>PLT.15.2.1 EventPortlet 接口</title>
+				<para>
+					...
+				</para>
+			</section>
+			<section>
+				<title>PLT.15.2.2 Receiving Events接收事件</title>
+				<para>
+					...
+				</para>
+			</section>
+			<section>
+				<title>PLT.15.2.3 Sending Events发送事件</title>
+				<para>
+					...
+				</para>
+			</section>
+			<section>
+				<title>PLT.15.2.4 Event declaration事件声明</title>
+				<para>
+					...
+				</para>
+			</section>
+			<section>
+				<title>PLT.15.2.5 Event processing事件处理</title>
+				<para>
+					...
+				</para>
+			</section>
+			<section>
+				<title>PLT.15.2.6 Exceptions during event processing</title>
+				<para>
+					...
+				</para>
+			</section>
+			<section>
+				<title>PLT.15.2.7 GenericPortlet support（支持）</title>
+				<para>
+					...
+				</para>
+			</section>
+		</section>
+		<section>
+			<title>PLT.15.3 Predefined Container Events</title>
+			<para>
+				...
+			</para>
+		</section>
+		
+</chapter>

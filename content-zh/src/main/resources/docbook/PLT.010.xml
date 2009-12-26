@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding="utf-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="zh-CN"
+	 xmlns:xlink="http://www.w3.org/1999/xlink"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>PLT.10 Portlet Context</title>	
+	<para>
+		The PortletContext interface defines a portlet’s view of the portlet application within
+which the portlet is running. Using the PortletContext object, a portlet can log events,
+obtain portlet application resources, application and portlet runtime options and set and
+store attributes that other portlets and servlets in the portlet application can access.
+	</para>
+		<section>
+			<title>PLT.10.1 Scope of the Portlet Context</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>Portlet Context functionality（Portlet下下文功能）</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.10.3 Relationship with the Servlet Context</title>
+			<para>
+				...
+			</para>
+			<section>
+				<title>PLT.10.3.1 Correspondence between ServletContext and PortletContext methods</title>
+				<para>
+					...
+				</para>
+			</section>
+		</section>
+		<section>
+			<title>PLT.10.4 Portlet Container Runtime Options</title>
+			<para>
+				...
+			</para>
+			<section>
+				<title>PLT.10.4.1 Runtime Option javax.portlet.escapeXml</title>
+				<para>
+					...
+				</para>
+			</section>
+			<section>
+				<title>PLT.10.4.2 Runtime Option javax.portlet.renderHeaders</title>
+				<para>
+					...
+				</para>
+			</section>
+			<section>
+				<title>PLT.10.4.3 Runtime Option javax.portlet.servletDefaultSessionScope</title>
+				<para>
+					...
+				</para>
+			</section>
+			<section>
+				<title>PLT.10.4.4 Runtime Option javax.portlet.actionScopedRequestAttributes</title>
+				<para>
+					...
+				</para>
+			</section>
+		</section>
+</chapter>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding="utf-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="zh-CN"
+	 xmlns:xlink="http://www.w3.org/1999/xlink"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Resource Serving资源服务</title>	
+	<para>
+		...
+	</para>
+		<section>
+			<title>PLT.13.1 ResourceServingPortlet Interface</title>
+			<para>
+				...
+			</para>
+		</section>
+		<section>
+			<title>PLT.13.2 Access to Render Parameters, Portlet Mode, and Window State</title>
+			<para>
+				...
+			</para>
+		</section>
+		<section>
+			<title>PLT.13.3 Access to Request and Response Headers</title>
+			<para>
+				...
+			</para>
+		</section>
+			<section>
+			<title>PLT.13.4 Getting the HTTP Method</title>
+			<para>
+				...
+			</para>
+		</section>
+			<section>
+			<title>PLT.13.5 Access to the Resource ID</title>
+			<para>
+				...
+			</para>
+		</section>
+			<section>
+			<title>PLT.13.6 Resource URLs</title>
+			<para>
+				...
+			</para>
+		</section>
+			<section>
+			<title>PLT.13.7 资源缓存</title>
+			<para>
+				...
+			</para>
+		</section>
+			<section>
+			<title>PLT.13.8 Generic Portlet Support </title>
+			<para>
+				...
+			</para>
+		</section>
+</chapter>
