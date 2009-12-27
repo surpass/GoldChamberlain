@@ -27,21 +27,39 @@ store attributes that other portlets and servlets in the portlet application can
 				...
 			</para>
 			<section>
-				<title>PLT.10.3.1 Correspondence between ServletContext and PortletContext methods</title>
+				<title>PLT.10.3.1 Correspondence(通信) between ServletContext and PortletContext methods</title>
 				<para>
-					...
+					下列方法ServletContext提供，PortletContext也应该提供相同的功能：
+					 getAttribute,getAttributeNames, getInitParameter, getInitParameterNames, getMimeType,
+getRealPath, getResource, getResourcePaths, getResourceAsStream, log,removeAttribute and setAttribute.
 				</para>
 			</section>
 		</section>
 		<section>
 			<title>PLT.10.4 Portlet Container Runtime Options</title>
 			<para>
-				...
+				The portlet can define additional runtime behavior in the portlet.xml on either the
+portlet application level or the portlet level with the container-runtime-option element.
+Runtime options that are defined on the application level should be applied to all portlets
+in the portlet application. Runtime options that are defined on the portlet level should be
+applied for this portlet only and override any runtime options defined on the application
+level with the same name.
 			</para>
+			<para>
+				Container runtime options besides the
+javax.portlet.actionScopedRequestAttributes option are optional to support by
+the portlet container and the portlet can find out which container runtime options are
+supported by the portlet container running the portlet via the method
+getContainerRuntimeOptions on the PortletContext.
+			</para>
+			<para>
+The getContainerRuntimeOptions method returns an enumeration of type String
+containing the keys of all container runtime options that the current portlet container supports.
+			</para>				
 			<section>
 				<title>PLT.10.4.1 Runtime Option javax.portlet.escapeXml</title>
 				<para>
-					...
+					... 
 				</para>
 			</section>
 			<section>
