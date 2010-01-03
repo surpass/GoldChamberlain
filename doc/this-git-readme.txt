@@ -1,30 +1,30 @@
-ÒÔÏÂ²Ù×÷ÒÔwindows²Ù×÷ÏµÍ³Git BashÎªÀı£º
+ä»¥ä¸‹æ“ä½œä»¥windowsæ“ä½œç³»ç»ŸGit Bashä¸ºä¾‹ï¼š
     
-    1  ls                #²é¿´ÄÚÈİ
-    2  cd ~/.ssh         #²é¿´ÊÇ·ñÒÑ¾­ÓĞssh key¡£Èç¹ûÓĞ½øĞĞ±¸·İ´¦Àí£¨ÂÔ£©
+    1  ls                #æŸ¥çœ‹å†…å®¹
+    2  cd ~/.ssh         #æŸ¥çœ‹æ˜¯å¦å·²ç»æœ‰ssh keyã€‚å¦‚æœæœ‰è¿›è¡Œå¤‡ä»½å¤„ç†ï¼ˆç•¥ï¼‰
     3  ls
     4  ls
     5
-    6  ssh-keygen.exe  -t rsa -C "surpass.li@gmail.com" #Éú³Éssh key
-    7  cd /e/workspace/portlet                          #½øÈë¹¤×÷Ä¿Â¼
+    6  ssh-keygen.exe  -t rsa -C "surpass.li@gmail.com" #ç”Ÿæˆssh key
+    7  cd /e/workspace/portlet                          #è¿›å…¥å·¥ä½œç›®å½•
     8  
-    9  pwd                                              #²é¿´µ±Ç°Â·¾¶
+    9  pwd                                              #æŸ¥çœ‹å½“å‰è·¯å¾„
    10  
-   11  git config --global user.name "surpass.li"       #ÅäÖÃgitÓÃ»§Ãû  
+   11  git config --global user.name "surpass.li"       #é…ç½®gitç”¨æˆ·å  
    12
-   13  git config --global user.email surpass.li@gmail.com  #ÅäÖÃgitÓÊ¼ş  
+   13  git config --global user.email surpass.li@gmail.com  #é…ç½®gité‚®ä»¶  
    14  
-   15  git init                             #³õÊ¹»¯¹¤×÷Ä¿Â¼
+   15  git init                             #åˆä½¿åŒ–å·¥ä½œç›®å½•
    16  
-   17  touch  test.txt                      #Éú³ÉÒ»¸öÎÄ¼ş
+   17  touch  test.txt                      #ç”Ÿæˆä¸€ä¸ªæ–‡ä»¶
    18  
-   19  git add *                            #Ìí¼ÓĞÂÄÚÈİ»òĞŞ¸ÄµÄÄÚÈİµ½Ë÷Òı¡£´Ë´¦¿ÉÒÔÖ¸¶¨Ä³¸öÎÄ¼ş
-   20  git commit -m 'first commit'         # Ìá½»Ë÷ÒıÄÚÈİµ½°æ±¾¿â¡£
-   21  git remote add origin git@github.com:surpass/GoldChamberlain.git     #½«±¾µØ°æ±¾·ÖÖ§Ìí¼Óµ½Ô¶³Ì°æ±¾¿â
-   22  git push origin master                                               #½«±¾µØ·ÖÖ§Ìá½»µ½Ô¶³Ì°æ±¾¿â£¬Èç¹ûÓĞ³åÍ»¿ÉÒÔ²é¿´Ïà¹Ø°ïÖú½øĞĞºÏ²¢¡£
+   19  git add *                            #æ·»åŠ æ–°å†…å®¹æˆ–ä¿®æ”¹çš„å†…å®¹åˆ°ç´¢å¼•ã€‚æ­¤å¤„å¯ä»¥æŒ‡å®šæŸä¸ªæ–‡ä»¶
+   20  git commit -m 'first commit'         # æäº¤ç´¢å¼•å†…å®¹åˆ°ç‰ˆæœ¬åº“ã€‚
+   21  git remote add origin git@github.com:surpass/GoldChamberlain.git     #å°†æœ¬åœ°ç‰ˆæœ¬åˆ†æ”¯æ·»åŠ åˆ°è¿œç¨‹ç‰ˆæœ¬åº“
+   22  git push origin master                                               #å°†æœ¬åœ°åˆ†æ”¯æäº¤åˆ°è¿œç¨‹ç‰ˆæœ¬åº“ï¼Œå¦‚æœæœ‰å†²çªå¯ä»¥æŸ¥çœ‹ç›¸å…³å¸®åŠ©è¿›è¡Œåˆå¹¶ã€‚
    
 
 
 
-http web·ÃÎÊ£º
+http webè®¿é—®ï¼š
 http://github.com/surpass/GoldChamberlain
