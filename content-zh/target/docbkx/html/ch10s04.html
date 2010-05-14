@@ -1,0 +1,89 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   
+      <title>10.4.&nbsp;PLT.10.4 Portlet Container Runtime Options</title>
+      <meta name="generator" content="DocBook XSL-NS Stylesheets V1.73.2">
+      <link rel="start" href="public-book.html" title="JavaTM Portlet Specification 2.0">
+      <link rel="up" href="ch10.html" title="&#31532;&nbsp;10&nbsp;&#31456;&nbsp;PLT.10 Portlet Context">
+      <link rel="prev" href="ch10s03.html" title="10.3.&nbsp;PLT.10.3 Relationship with the Servlet Context">
+      <link rel="next" href="ch10s04s02.html" title="10.4.2.&nbsp;PLT.10.4.2 Runtime Option javax.portlet.renderHeaders">
+   </head>
+   <body>
+      <div class="navheader">
+         <table width="100%" summary="Navigation header">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="ch10s03.html">10.3.&nbsp;PLT.10.3 Relationship with the Servlet Context</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="public-book.html">
+                     												TOC
+                                                                 </a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="ch10s04s02.html">10.4.2.&nbsp;PLT.10.4.2 Runtime Option javax.portlet.renderHeaders</a></td>
+            </tr>
+         </table>
+      </div>
+      <div class="section" lang="zh-CN">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title" style="clear: both"><a name="d0e550"></a>10.4.&nbsp;PLT.10.4 Portlet Container Runtime Options
+                  </h2>
+               </div>
+            </div>
+         </div>
+         <p>
+            				The portlet can define additional runtime behavior in the portlet.xml on either the
+            portlet application level or the portlet level with the container-runtime-option element.
+            Runtime options that are defined on the application level should be applied to all portlets
+            in the portlet application. Runtime options that are defined on the portlet level should be
+            applied for this portlet only and override any runtime options defined on the application
+            level with the same name.
+            			
+         </p>
+         <p>
+            				Container runtime options besides the
+            javax.portlet.actionScopedRequestAttributes option are optional to support by
+            the portlet container and the portlet can find out which container runtime options are
+            supported by the portlet container running the portlet via the method
+            getContainerRuntimeOptions on the PortletContext.
+            			
+         </p>
+         <p>
+            The getContainerRuntimeOptions method returns an enumeration of type String
+            containing the keys of all container runtime options that the current portlet container supports.
+            			
+         </p>
+         <div class="section" lang="zh-CN">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h3 class="title"><a name="d0e559"></a>10.4.1.&nbsp;PLT.10.4.1 Runtime Option javax.portlet.escapeXml
+                     </h3>
+                  </div>
+               </div>
+            </div>
+            <p>
+               					... 
+               				
+            </p>
+         </div>
+      </div>
+      <div class="navfooter">
+         <hr>
+         <table width="100%" summary="Navigation footer">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="ch10s03.html">&#19978;&#19968;&#39029;</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="public-book.html">&#36215;&#22987;&#39029;</a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="ch10s04s02.html">&#19979;&#19968;&#39029;</a></td>
+            </tr>
+            <tr>
+               <td width="40%" align="left" valign="top">10.3.&nbsp;PLT.10.3 Relationship with the Servlet Context&nbsp;</td>
+               <td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.sonatype.com/" title="Sonatype: Build Success for your Enterprise">Sponsored by Sonatype
+                                                                </a></span></td>
+               <td width="40%" align="right" valign="top">&nbsp;10.4.2.&nbsp;PLT.10.4.2 Runtime Option javax.portlet.renderHeaders</td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

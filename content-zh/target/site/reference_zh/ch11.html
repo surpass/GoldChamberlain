@@ -1,0 +1,271 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   
+      <title>&#31532;&nbsp;11&nbsp;&#31456;&nbsp;PLT.11 Portlet Requests</title>
+      <meta name="generator" content="DocBook XSL-NS Stylesheets V1.73.2">
+      <link rel="start" href="public-book.html" title="JavaTM Portlet Specification 2.0">
+      <link rel="up" href="public-book.html" title="JavaTM Portlet Specification 2.0">
+      <link rel="prev" href="ch10s04s04.html" title="10.4.4.&nbsp;PLT.10.4.4 Runtime Option javax.portlet.actionScopedRequestAttributes">
+      <link rel="next" href="ch11s02.html" title="11.2.&nbsp;PLT.11.2 ClientDataRequest Interface">
+   </head>
+   <body>
+      <div class="navheader">
+         <table width="100%" summary="Navigation header">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="ch10s04s04.html">10.4.4.&nbsp;PLT.10.4.4 Runtime Option javax.portlet.actionScopedRequestAttributes</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="public-book.html">
+                     												TOC
+                                                                 </a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="ch11s02.html">11.2.&nbsp;PLT.11.2 ClientDataRequest Interface</a></td>
+            </tr>
+         </table>
+      </div>
+      <div class="chapter" lang="zh-CN">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title"><a name="d0e579"></a>&#31532;&nbsp;11&nbsp;&#31456;&nbsp;PLT.11 Portlet Requests
+                  </h2>
+               </div>
+            </div>
+         </div>
+         <div class="toc">
+            <dl>
+               <dt><span class="section"><a href="ch11.html#d0e584">11.1. PLT.11.1 PortletRequest Interface</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch11.html#d0e589">11.1.1. PLT.11.1.1 Request Parameters&#35831;&#27714;&#21442;&#25968;</a></span></dt>
+                     <dt><span class="section"><a href="ch11.html#d0e594">11.1.2. PLT.11.1.2 Public Render Parameters</a></span></dt>
+                     <dt><span class="section"><a href="ch11.html#d0e599">11.1.3. PLT.11.1.3 Extra Request Parameters&#25193;&#23637;&#35831;&#27714;&#21442;&#25968;</a></span></dt>
+                     <dt><span class="section"><a href="ch11.html#d0e604">11.1.4. PLT.11.1.4 Request Attributes</a></span></dt>
+                     <dt><span class="section"><a href="ch11.html#d0e609">11.1.5. PLT.11.1.5 Request Properties</a></span></dt>
+                     <dt><span class="section"><a href="ch11.html#d0e614">11.1.6. PLT.11.1.6 Request Context Path&#35831;&#27714;&#19978;&#19979;&#25991;&#36335;&#24452;</a></span></dt>
+                     <dt><span class="section"><a href="ch11.html#d0e619">11.1.7. PLT.11.1.7 Security Attributes&#23433;&#20840;&#23646;&#24615;</a></span></dt>
+                     <dt><span class="section"><a href="ch11.html#d0e624">11.1.8. PLT.11.1.8 Response Content Types&#21709;&#24212;&#20869;&#23481;&#31867;&#22411;</a></span></dt>
+                     <dt><span class="section"><a href="ch11.html#d0e629">11.1.9. PLT.11.1.9 Internationalization&#22269;&#38469;&#21270;</a></span></dt>
+                     <dt><span class="section"><a href="ch11.html#d0e634">11.1.10. PLT.11.1.10 Portlet Mode Portlet&#27169;&#24335;</a></span></dt>
+                     <dt><span class="section"><a href="ch11.html#d0e639">11.1.11. PLT.11.1.11 Window State &#31383;&#21475;&#29366;&#24577;</a></span></dt>
+                     <dt><span class="section"><a href="ch11.html#d0e644">11.1.12. PLT.11.1.12 Access to the Portlet Window ID&#20351;&#29992;Portlet&#31383;&#21475;ID</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="section"><a href="ch11s02.html">11.2. PLT.11.2 ClientDataRequest Interface</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch11s02.html#d0e654">11.2.1. PLT.11.2.1 Retrieving Uploaded Data</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="section"><a href="ch11s03.html">11.3. PLT.11.3 ActionRequest Interface</a></span></dt>
+               <dt><span class="section"><a href="ch11s04.html">11.4. PLT.11.4 ResourceRequest Interface</a></span></dt>
+               <dt><span class="section"><a href="ch11s05.html">11.5. PLT.11.5 EventRequest Interface</a></span></dt>
+               <dt><span class="section"><a href="ch11s06.html">11.6. PLT.11.6 RenderRequest Interface</a></span></dt>
+               <dt><span class="section"><a href="ch11s07.html">11.7. PLT.11.7 Lifetime of the Request Objects</a></span></dt>
+            </dl>
+         </div>
+         <p>
+            		...
+            	
+         </p>
+         <div class="section" lang="zh-CN">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both"><a name="d0e584"></a>11.1.&nbsp;PLT.11.1 PortletRequest Interface
+                     </h2>
+                  </div>
+               </div>
+            </div>
+            <p>
+               				...
+               			
+            </p>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e589"></a>11.1.1.&nbsp;PLT.11.1.1 Request Parameters&#35831;&#27714;&#21442;&#25968;
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e594"></a>11.1.2.&nbsp;PLT.11.1.2 Public Render Parameters
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e599"></a>11.1.3.&nbsp;PLT.11.1.3 Extra Request Parameters&#25193;&#23637;&#35831;&#27714;&#21442;&#25968;
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e604"></a>11.1.4.&nbsp;PLT.11.1.4 Request Attributes
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e609"></a>11.1.5.&nbsp;PLT.11.1.5 Request Properties
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e614"></a>11.1.6.&nbsp;PLT.11.1.6 Request Context Path&#35831;&#27714;&#19978;&#19979;&#25991;&#36335;&#24452;
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e619"></a>11.1.7.&nbsp;PLT.11.1.7 Security Attributes&#23433;&#20840;&#23646;&#24615;
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e624"></a>11.1.8.&nbsp;PLT.11.1.8 Response Content Types&#21709;&#24212;&#20869;&#23481;&#31867;&#22411;
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e629"></a>11.1.9.&nbsp;PLT.11.1.9 Internationalization&#22269;&#38469;&#21270;
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e634"></a>11.1.10.&nbsp;PLT.11.1.10 Portlet Mode Portlet&#27169;&#24335;
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e639"></a>11.1.11.&nbsp;PLT.11.1.11 Window State &#31383;&#21475;&#29366;&#24577;
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e644"></a>11.1.12.&nbsp;PLT.11.1.12 Access to the Portlet Window ID&#20351;&#29992;Portlet&#31383;&#21475;ID
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="navfooter">
+         <hr>
+         <table width="100%" summary="Navigation footer">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="ch10s04s04.html">&#19978;&#19968;&#39029;</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="public-book.html">&#36215;&#22987;&#39029;</a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="ch11s02.html">&#19979;&#19968;&#39029;</a></td>
+            </tr>
+            <tr>
+               <td width="40%" align="left" valign="top">10.4.4.&nbsp;PLT.10.4.4 Runtime Option javax.portlet.actionScopedRequestAttributes&nbsp;</td>
+               <td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.sonatype.com/" title="Sonatype: Build Success for your Enterprise">Sponsored by Sonatype
+                                                                </a></span></td>
+               <td width="40%" align="right" valign="top">&nbsp;11.2.&nbsp;PLT.11.2 ClientDataRequest Interface</td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

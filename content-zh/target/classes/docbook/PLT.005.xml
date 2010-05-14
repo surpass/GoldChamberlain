@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding="utf-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="zh-CN"
+	 xmlns:xlink="http://www.w3.org/1999/xlink"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>PLT.5 The Portlet Interface and Additional Life Cycle Interfaces（Porlet接口和附加的生命周期接口）</title>	
+	<para>
+		。。。
+	</para>
+	<section>
+		<title>PLT.5.1 Number of Portlet Instances实例化数量</title>
+		<para>
+			。。。
+		</para>
+	</section>
+	<section>
+		<title>PLT.5.2 Portlet Life Cycle</title>
+		<para>
+			。。。
+		</para>
+		<section>
+			<title>PLT.5.2.1 Loading and Instantiation装载和实例化</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.5.2.2 Initialization初使化</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.5.2.3 End of Service服务结束</title>
+			<para>
+				。。。
+			</para>
+		</section>
+	</section>
+	<section>
+		<title>PLT.5.3 Portlet Customization Levels 自定义</title>
+		<para>
+			。。。
+		</para>
+		<section>
+			<title>PLT.5.3.1 Portlet Definition and Portlet Entity 定义和实体</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.5.3.2 Portlet Window 窗口</title>
+			<para>
+				。。。
+			</para>
+		</section>
+	</section>
+	<section>
+		<title>PLT.5.4 Request Handling</title>
+		<para>
+			。。。
+		</para>
+		<section>
+			<title>PLT.5.4.1 Action Request</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.5.4.2 Event Request</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.5.4.3 Render Request</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.5.4.4 Resource Request</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.5.4.5 GenericPortlet</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.5.4.6 Multithreading Issues During Request Handling</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.5.4.7 Exceptions During Request Handling</title>
+			<para>
+				。。。
+			</para>
+		</section>
+		<section>
+			<title>PLT.5.4.8 Thread Safety线程安全</title>
+			<para>
+				。。。
+			</para>
+		</section>
+	</section>
+</chapter>

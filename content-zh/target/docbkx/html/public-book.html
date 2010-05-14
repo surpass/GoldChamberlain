@@ -1,0 +1,562 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   
+      <title>JavaTM Portlet Specification 2.0</title>
+      <meta name="generator" content="DocBook XSL-NS Stylesheets V1.73.2">
+      <meta name="description" content="JavaTM Portlet Specification 2.0&#26159;&#19968;&#26412;&#20851;&#20110;Portlet 2.0&#30340;&#35268;&#33539;&#30340;&#20070;&#12290;">
+      <link rel="start" href="public-book.html" title="JavaTM Portlet Specification 2.0">
+      <link rel="next" href="preface-copyright.html" title="&#29256;&#26435;">
+   </head>
+   <body>
+      <div class="navheader">
+         <table width="100%" summary="Navigation header">
+            <tr>
+               <td width="40%" align="left">&nbsp;</td>
+               <td width="20%" align="center">&nbsp;</td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="preface-copyright.html">&#29256;&#26435;</a></td>
+            </tr>
+         </table>
+      </div>
+      <div class="book" lang="zh-CN">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h1 class="title"><a name="d0e1"></a>JavaTM Portlet Specification 2.0
+                  </h1>
+               </div>
+               <div>
+                  <div class="authorgroup">
+                     <div class="author">
+                        <h3 class="author"><span class="firstname">Li</span> <span class="surname">Surpass</span></h3>
+                        <div class="affiliation"><span class="orgname">&#31070;&#24030;&#36229;&#24037;&#20316;&#23460;.<br></span></div>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="abstract">
+                     <p class="title"><b>&#25688;&#35201;</b></p>
+                     <p>JavaTM Portlet Specification 2.0&#26159;&#19968;&#26412;&#20851;&#20110;Portlet 2.0&#30340;&#35268;&#33539;&#30340;&#20070;&#12290;</p>
+                  </div>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <div class="toc">
+            <dl>
+               <dt><span class="preface"><a href="preface-copyright.html">&#29256;&#26435;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="preface-copyright.html#d0e35">1. Creative Commons BY-ND-NC</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="preface"><a href="public-forward.html">&#24207;: Beta 0.1</a></span></dt>
+               <dt><span class="chapter"><a href="ch01.html">1. PLT.1 Preface &#21069;&#35328;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch01.html#d0e100">1.1. PLT.1.1 Additional Sources</a></span></dt>
+                     <dt><span class="section"><a href="ch01s02.html">1.2. PLT.1.2 Who Should Read This Specification</a></span></dt>
+                     <dt><span class="section"><a href="ch01s03.html">1.3. PLT.1.3 API Reference API&#21442;&#32771;</a></span></dt>
+                     <dt><span class="section"><a href="ch01s04.html">1.4. &#20854;&#23427;Java&#24179;&#21488;&#35268;&#33539;</a></span></dt>
+                     <dt><span class="section"><a href="ch01s05.html">1.5. Other Important References</a></span></dt>
+                     <dt><span class="section"><a href="ch01s06.html">1.6. PLT.1.6 Terminology &#26415;&#35821;</a></span></dt>
+                     <dt><span class="section"><a href="ch01s07.html">1.7. Providing Feedback</a></span></dt>
+                     <dt><span class="section"><a href="ch01s08.html">1.8. Acknowledgements V 2.0</a></span></dt>
+                     <dt><span class="section"><a href="ch01s09.html">1.9. Acknowledgements V1.0</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch02.html">2. Overview</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch02.html#d0e150">2.1. PLT.2.1 What is a Portal?</a></span></dt>
+                     <dt><span class="section"><a href="ch02s02.html">2.2. PLT.2.2 What is a Portlet?</a></span></dt>
+                     <dt><span class="section"><a href="ch02s03.html">2.3. PLT.2.3 What is a Portlet Container?</a></span></dt>
+                     <dt><span class="section"><a href="ch02s04.html">2.4. PLT.2.4 An Example</a></span></dt>
+                     <dt><span class="section"><a href="ch02s05.html">2.5. PLT.2.5 Compatibility</a></span></dt>
+                     <dt><span class="section"><a href="ch02s06.html">2.6. PLT.2.6 Major changes introduced with V 2.0</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch02s06.html#d0e180">2.6.1. PLT.2.6.1 Clarifications that may make V1.0 Portlets Non-compliant</a></span></dt>
+                           <dt><span class="section"><a href="ch02s06s02.html">2.6.2. PLT.2.6.2 Changes to the Programming Model</a></span></dt>
+                           <dt><span class="section"><a href="ch02s06s03.html">2.6.3. PLT.2.6.3 List of all Changes in the Specification</a></span></dt>
+                           <dt><span class="section"><a href="ch02s06s04.html">2.6.4. PLT.2.6.3 List of all Changes in the Specification</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch02s07.html">2.7. PLT.2.7 Relationship with Java 2 Platform, Standard and Enterprise Edition</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch03.html">3. PLT.3 Relationship with the Servlet Specification</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch03.html#d0e210">3.1. PLT.3.1 Bridging from Portlets to Servlets/JSPs</a></span></dt>
+                     <dt><span class="section"><a href="ch03s02.html">3.2. PLT.3.2 Using Servlet Application Lifecycle Events</a></span></dt>
+                     <dt><span class="section"><a href="ch03s03.html">3.3. PLT.3.3 Relationship Between the Servlet Container and the Portlet Container</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch04.html">4. Portlet Concepts Porlet&#27010;&#24565;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch04.html#d0e230">4.1. PLT.4.1 Portlets</a></span></dt>
+                     <dt><span class="section"><a href="ch04s02.html">4.2. PLT.4.2 Embedding Portlets as Elements of a Portal Page</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch04s02.html#d0e240">4.2.1. PLT.4.2.1 Portal Page Creation</a></span></dt>
+                           <dt><span class="section"><a href="ch04s02s02.html">4.2.2. PLT.4.2.2 Portal Page Request Sequence</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch04s03.html">4.3. PLT.4.3 Portlets and Web Frameworks</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch05.html">5. PLT.5 The Portlet Interface and Additional Life Cycle Interfaces&#65288;Porlet&#25509;&#21475;&#21644;&#38468;&#21152;&#30340;&#29983;&#21629;&#21608;&#26399;&#25509;&#21475;&#65289;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch05.html#d0e260">5.1. PLT.5.1 Number of Portlet Instances&#23454;&#20363;&#21270;&#25968;&#37327;</a></span></dt>
+                     <dt><span class="section"><a href="ch05s02.html">5.2. PLT.5.2 Portlet Life Cycle</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch05s02.html#d0e270">5.2.1. PLT.5.2.1 Loading and Instantiation&#35013;&#36733;&#21644;&#23454;&#20363;&#21270;</a></span></dt>
+                           <dt><span class="section"><a href="ch05s02s02.html">5.2.2. PLT.5.2.2 Initialization&#21021;&#20351;&#21270;</a></span></dt>
+                           <dt><span class="section"><a href="ch05s02s03.html">5.2.3. PLT.5.2.3 End of Service&#26381;&#21153;&#32467;&#26463;</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch05s03.html">5.3. PLT.5.3 Portlet Customization Levels &#33258;&#23450;&#20041;</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch05s03.html#d0e290">5.3.1. PLT.5.3.1 Portlet Definition and Portlet Entity &#23450;&#20041;&#21644;&#23454;&#20307;</a></span></dt>
+                           <dt><span class="section"><a href="ch05s03s02.html">5.3.2. PLT.5.3.2 Portlet Window &#31383;&#21475;</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch05s04.html">5.4. PLT.5.4 Request Handling</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch05s04.html#d0e305">5.4.1. PLT.5.4.1 Action Request</a></span></dt>
+                           <dt><span class="section"><a href="ch05s04s02.html">5.4.2. PLT.5.4.2 Event Request</a></span></dt>
+                           <dt><span class="section"><a href="ch05s04s03.html">5.4.3. PLT.5.4.3 Render Request</a></span></dt>
+                           <dt><span class="section"><a href="ch05s04s04.html">5.4.4. PLT.5.4.4 Resource Request</a></span></dt>
+                           <dt><span class="section"><a href="ch05s04s05.html">5.4.5. PLT.5.4.5 GenericPortlet</a></span></dt>
+                           <dt><span class="section"><a href="ch05s04s06.html">5.4.6. PLT.5.4.6 Multithreading Issues During Request Handling</a></span></dt>
+                           <dt><span class="section"><a href="ch05s04s07.html">5.4.7. PLT.5.4.7 Exceptions During Request Handling</a></span></dt>
+                           <dt><span class="section"><a href="ch05s04s08.html">5.4.8. PLT.5.4.8 Thread Safety&#32447;&#31243;&#23433;&#20840;</a></span></dt>
+                        </dl>
+                     </dd>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch06.html">6. PLT.6 Portlet Config</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch06.html#d0e350">6.1. PLT.6.1 Initialization Parameters&#21021;&#20351;&#21270;&#21442;&#25968;</a></span></dt>
+                     <dt><span class="section"><a href="ch06s02.html">6.2. PLT.6.2 Portlet Resource Bundle &#36164;&#28304;&#32465;&#23450;</a></span></dt>
+                     <dt><span class="section"><a href="ch06s03.html">6.3. PLT.6.3 Default Event Namespace&#40664;&#35748;&#20107;&#20214;&#21629;&#21517;&#31354;&#38388;</a></span></dt>
+                     <dt><span class="section"><a href="ch06s04.html">6.4. PLT.6.4 Public Render Parameter Names</a></span></dt>
+                     <dt><span class="section"><a href="ch06s05.html">6.5. PLT.6.5 Publishing Event QNames</a></span></dt>
+                     <dt><span class="section"><a href="ch06s06.html">6.6. PLT.6.6 Processing Event QNames</a></span></dt>
+                     <dt><span class="section"><a href="ch06s07.html">6.7. PLT.6.7 Supported Locales</a></span></dt>
+                     <dt><span class="section"><a href="ch06s08.html">6.8. Supported Container Runtime Options</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch07.html">7. PLT.7 Portlet URLs</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch07.html#d0e395">7.1. PLT.7.1 Portlet URLs</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch07.html#d0e400">7.1.1. PLT.7.1.1 BaseURL interface</a></span></dt>
+                           <dt><span class="section"><a href="ch07.html#d0e405">7.1.2. PLT.7.1.2 Including a Portlet Mode or a Window State</a></span></dt>
+                           <dt><span class="section"><a href="ch07.html#d0e410">7.1.3. PLT.7.1.3 Portlet URL security</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch07s02.html">7.2. PLT.7.2 Portlet URL listeners</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch07s02.html#d0e420">7.2.1. PLT.7.2.1 PortletURLGenerationListener Interface</a></span></dt>
+                           <dt><span class="section"><a href="ch07s02s02.html">7.2.2. PLT.7.2.2 Registering Portlet URL Listeners</a></span></dt>
+                        </dl>
+                     </dd>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch08.html">8. PLT.8 Portlet Modes&#65288;Porlet &#27169;&#24335;&#65289;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch08.html#d0e435">8.1. PLT.8.1 VIEW Portlet Mode &#26597;&#30475;&#27169;&#24335;</a></span></dt>
+                     <dt><span class="section"><a href="ch08s02.html">8.2. PLT.8.2 EDIT Portlet Mode &#32534;&#36753;&#27169;&#24335;</a></span></dt>
+                     <dt><span class="section"><a href="ch08s03.html">8.3. PLT.8.3 HELP Portlet Mode &#65288;Portlet&#24110;&#21161;&#27169;&#24335;&#65289;</a></span></dt>
+                     <dt><span class="section"><a href="ch08s04.html">8.4. PLT.8.4 Custom Portlet Modes</a></span></dt>
+                     <dt><span class="section"><a href="ch08s05.html">8.5. PLT.8.5 GenericPortlet Render Handling</a></span></dt>
+                     <dt><span class="section"><a href="ch08s06.html">8.6. PLT.8.6 Defining Portlet Modes Support</a></span></dt>
+                     <dt><span class="section"><a href="ch08s07.html">8.7. PLT.8.7 Setting next possible Portlet Modes</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch09.html">9. PLT.9 Window States &#31383;&#21475;&#29366;&#24577;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch09.html#d0e477">9.1. PLT.9.1 NORMAL Window State </a></span></dt>
+                     <dt><span class="section"><a href="ch09s02.html">9.2. PLT.9.2 MAXIMIZED Window State &#26368;&#22823;&#21270;&#31383;&#21475;</a></span></dt>
+                     <dt><span class="section"><a href="ch09s03.html">9.3. PLT.9.3 MINIMIZED Window State &#26368;&#23567;&#21270;&#31383;&#21475;</a></span></dt>
+                     <dt><span class="section"><a href="ch09s04.html">9.4. PLT.9.4 Custom&#65288;&#33258;&#23450;&#20041;&#65289; Window States</a></span></dt>
+                     <dt><span class="section"><a href="ch09s05.html">9.5. PLT.9.5 Defining Window State Support.&#23450;&#35748;&#31383;&#21475;&#29366;&#24577;&#25903;&#25345;</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch10.html">10. PLT.10 Portlet Context</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch10.html#d0e530">10.1. PLT.10.1 Scope of the Portlet Context</a></span></dt>
+                     <dt><span class="section"><a href="ch10s02.html">10.2. Portlet Context functionality&#65288;Portlet&#19979;&#19979;&#25991;&#21151;&#33021;&#65289;</a></span></dt>
+                     <dt><span class="section"><a href="ch10s03.html">10.3. PLT.10.3 Relationship with the Servlet Context</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch10s03.html#d0e545">10.3.1. PLT.10.3.1 Correspondence(&#36890;&#20449;) between ServletContext and PortletContext methods</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch10s04.html">10.4. PLT.10.4 Portlet Container Runtime Options</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch10s04.html#d0e559">10.4.1. PLT.10.4.1 Runtime Option javax.portlet.escapeXml</a></span></dt>
+                           <dt><span class="section"><a href="ch10s04s02.html">10.4.2. PLT.10.4.2 Runtime Option javax.portlet.renderHeaders</a></span></dt>
+                           <dt><span class="section"><a href="ch10s04s03.html">10.4.3. PLT.10.4.3 Runtime Option javax.portlet.servletDefaultSessionScope</a></span></dt>
+                           <dt><span class="section"><a href="ch10s04s04.html">10.4.4. PLT.10.4.4 Runtime Option javax.portlet.actionScopedRequestAttributes</a></span></dt>
+                        </dl>
+                     </dd>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch11.html">11. PLT.11 Portlet Requests</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch11.html#d0e584">11.1. PLT.11.1 PortletRequest Interface</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch11.html#d0e589">11.1.1. PLT.11.1.1 Request Parameters&#35831;&#27714;&#21442;&#25968;</a></span></dt>
+                           <dt><span class="section"><a href="ch11.html#d0e594">11.1.2. PLT.11.1.2 Public Render Parameters</a></span></dt>
+                           <dt><span class="section"><a href="ch11.html#d0e599">11.1.3. PLT.11.1.3 Extra Request Parameters&#25193;&#23637;&#35831;&#27714;&#21442;&#25968;</a></span></dt>
+                           <dt><span class="section"><a href="ch11.html#d0e604">11.1.4. PLT.11.1.4 Request Attributes</a></span></dt>
+                           <dt><span class="section"><a href="ch11.html#d0e609">11.1.5. PLT.11.1.5 Request Properties</a></span></dt>
+                           <dt><span class="section"><a href="ch11.html#d0e614">11.1.6. PLT.11.1.6 Request Context Path&#35831;&#27714;&#19978;&#19979;&#25991;&#36335;&#24452;</a></span></dt>
+                           <dt><span class="section"><a href="ch11.html#d0e619">11.1.7. PLT.11.1.7 Security Attributes&#23433;&#20840;&#23646;&#24615;</a></span></dt>
+                           <dt><span class="section"><a href="ch11.html#d0e624">11.1.8. PLT.11.1.8 Response Content Types&#21709;&#24212;&#20869;&#23481;&#31867;&#22411;</a></span></dt>
+                           <dt><span class="section"><a href="ch11.html#d0e629">11.1.9. PLT.11.1.9 Internationalization&#22269;&#38469;&#21270;</a></span></dt>
+                           <dt><span class="section"><a href="ch11.html#d0e634">11.1.10. PLT.11.1.10 Portlet Mode Portlet&#27169;&#24335;</a></span></dt>
+                           <dt><span class="section"><a href="ch11.html#d0e639">11.1.11. PLT.11.1.11 Window State &#31383;&#21475;&#29366;&#24577;</a></span></dt>
+                           <dt><span class="section"><a href="ch11.html#d0e644">11.1.12. PLT.11.1.12 Access to the Portlet Window ID&#20351;&#29992;Portlet&#31383;&#21475;ID</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch11s02.html">11.2. PLT.11.2 ClientDataRequest Interface</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch11s02.html#d0e654">11.2.1. PLT.11.2.1 Retrieving Uploaded Data</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch11s03.html">11.3. PLT.11.3 ActionRequest Interface</a></span></dt>
+                     <dt><span class="section"><a href="ch11s04.html">11.4. PLT.11.4 ResourceRequest Interface</a></span></dt>
+                     <dt><span class="section"><a href="ch11s05.html">11.5. PLT.11.5 EventRequest Interface</a></span></dt>
+                     <dt><span class="section"><a href="ch11s06.html">11.6. PLT.11.6 RenderRequest Interface</a></span></dt>
+                     <dt><span class="section"><a href="ch11s07.html">11.7. PLT.11.7 Lifetime of the Request Objects</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch12.html">12. Portlet Responses</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch12.html#d0e689">12.1. PLT.12.1 PortletResponse Interface</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch12.html#d0e694">12.1.1. PLT.12.1.1 Response Properties Response&#23646;&#24615;</a></span></dt>
+                           <dt><span class="section"><a href="ch12.html#d0e699">12.1.2. PLT.12.1.2 Encoding of URLs URLs&#32534;&#30721;</a></span></dt>
+                           <dt><span class="section"><a href="ch12.html#d0e704">12.1.3. PLT.12.1.3 &#21629;&#21517;&#31354;&#38388;</a></span></dt>
+                           <dt><span class="section"><a href="ch12.html#d0e709">12.1.4. PLT.12.1.4 Setting Cookies&#35774;&#32622;Cookies</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch12s02.html">12.2. PLT.12.2 StateAwareResponse Interface</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch12s02.html#d0e719">12.2.1. PLT.12.2.1 Render Parameters</a></span></dt>
+                           <dt><span class="section"><a href="ch12s02s02.html">12.2.2. PLT.12.2.2 Portlet Modes and Window State Changes Portlet&#27169;&#24335;&#19982;&#31383;&#21475;&#29366;&#24577;&#36716;&#25442;</a></span></dt>
+                           <dt><span class="section"><a href="ch12s02s03.html">12.2.3. PLT.12.2.3 Publishing Events&#20844;&#20849;&#20107;&#20214;</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch12s03.html">12.3. PLT.12.3 ActionResponse Interface</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch12s03.html#d0e739">12.3.1. PLT.12.3.1 Redirections</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch12s04.html">12.4. PLT.12.4 EventResponse Interface</a></span></dt>
+                     <dt><span class="section"><a href="ch12s05.html">12.5. PLT.12.5 MimeResponse Interface</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch12s05.html#d0e754">12.5.1. PLT.12.5.1 Content Type&#20869;&#23481;&#31867;&#22411;</a></span></dt>
+                           <dt><span class="section"><a href="ch12s05s02.html">12.5.2. PLT.12.5.2 Output Stream and Writer Objects</a></span></dt>
+                           <dt><span class="section"><a href="ch12s05s03.html">12.5.3. PLT.12.5.3 Access to Response Headers&#21709;&#24212;&#22836;&#30340;&#20351;&#29992;</a></span></dt>
+                           <dt><span class="section"><a href="ch12s05s04.html">12.5.4. PLT.12.5.4 Setting Markup Head Elements</a></span></dt>
+                           <dt><span class="section"><a href="ch12s05s05.html">12.5.5. PLT.12.5.5 Buffering&#32531;&#20914;</a></span></dt>
+                           <dt><span class="section"><a href="ch12s05s06.html">12.5.6. PLT.12.5.6 Predefined MimeResponse Properties</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch12s06.html">12.6. PLT.12.6 RenderResponse Interface</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch12s06.html#d0e789">12.6.1. PLT.12.6.1 Portlet Title</a></span></dt>
+                           <dt><span class="section"><a href="ch12s06s02.html">12.6.2. PLT.12.6.2 Next possible portlet modes</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch12s07.html">12.7. PLT.12.7 ResourceResponse Interface</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch12s07.html#d0e804">12.7.1. PLT.12.7.1 Setting the Response Character Set&#35774;&#32622;&#21709;&#24212;&#23383;&#31526;&#38598;</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch12s08.html">12.8. PLT.12.8 Lifetime of Response Objects</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch13.html">13. Resource Serving&#36164;&#28304;&#26381;&#21153;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch13.html#d0e819">13.1. PLT.13.1 ResourceServingPortlet Interface</a></span></dt>
+                     <dt><span class="section"><a href="ch13s02.html">13.2. PLT.13.2 Access to Render Parameters, Portlet Mode, and Window State</a></span></dt>
+                     <dt><span class="section"><a href="ch13s03.html">13.3. PLT.13.3 Access to Request and Response Headers</a></span></dt>
+                     <dt><span class="section"><a href="ch13s04.html">13.4. PLT.13.4 Getting the HTTP Method</a></span></dt>
+                     <dt><span class="section"><a href="ch13s05.html">13.5. PLT.13.5 Access to the Resource ID</a></span></dt>
+                     <dt><span class="section"><a href="ch13s06.html">13.6. PLT.13.6 Resource URLs</a></span></dt>
+                     <dt><span class="section"><a href="ch13s07.html">13.7. PLT.13.7 &#36164;&#28304;&#32531;&#23384;</a></span></dt>
+                     <dt><span class="section"><a href="ch13s08.html">13.8. PLT.13.8 Generic Portlet Support </a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch14.html">14. PLT.14 Serving Fragments through Portlets</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch14.html#d0e864">14.1. PLT.14.1 Serving Fragments via serveResource Method</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch15.html">15. PLT.15 Coordination between portlets</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch15.html#d0e874">15.1. PLT.15.1 Public Render Parameters</a></span></dt>
+                     <dt><span class="section"><a href="ch15s02.html">15.2. PLT.15.2 Portlet &#20107;&#20214;</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch15s02.html#d0e884">15.2.1. PLT.15.2.1 EventPortlet &#25509;&#21475;</a></span></dt>
+                           <dt><span class="section"><a href="ch15s02s02.html">15.2.2. PLT.15.2.2 Receiving Events&#25509;&#25910;&#20107;&#20214;</a></span></dt>
+                           <dt><span class="section"><a href="ch15s02s03.html">15.2.3. PLT.15.2.3 Sending Events&#21457;&#36865;&#20107;&#20214;</a></span></dt>
+                           <dt><span class="section"><a href="ch15s02s04.html">15.2.4. PLT.15.2.4 Event declaration&#20107;&#20214;&#22768;&#26126;</a></span></dt>
+                           <dt><span class="section"><a href="ch15s02s05.html">15.2.5. PLT.15.2.5 Event processing&#20107;&#20214;&#22788;&#29702;</a></span></dt>
+                           <dt><span class="section"><a href="ch15s02s06.html">15.2.6. PLT.15.2.6 Exceptions during event processing</a></span></dt>
+                           <dt><span class="section"><a href="ch15s02s07.html">15.2.7. PLT.15.2.7 GenericPortlet support&#65288;&#25903;&#25345;&#65289;</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch15s03.html">15.3. PLT.15.3 Predefined Container Events</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch16.html">16. PLT.16 Portal Context</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch16.html#d0e929">16.1. PLT.16.1 Support for Markup Head Elements</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch17.html">17. PLT.17 Portlet Preferences</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch17.html#d0e939">17.1. PLT.17.1 PortletPreferences &#25509;&#21475;</a></span></dt>
+                     <dt><span class="section"><a href="ch17s02.html">17.2. PLT.17.2 Preference Attributes &#20316;&#29992;&#22495;</a></span></dt>
+                     <dt><span class="section"><a href="ch17s03.html">17.3. PLT.17.3 Preference Attributes &#23450;&#20041;</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch17s03.html#d0e954">17.3.1. PLT.17.3.1 &#26412;&#22320;&#21270;Preference&#23646;&#24615;</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch17s04.html">17.4. PLT.17.4 &#39564;&#35777;Preference values</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch18.html">18. PLT.18 Sessions</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch18.html#d0e969">18.1. PLT.18.1 &#21019;&#24314;Session.</a></span></dt>
+                     <dt><span class="section"><a href="ch18s02.html">18.2. Session&#20316;&#29992;&#22495;</a></span></dt>
+                     <dt><span class="section"><a href="ch18s03.html">18.3. PLT.18.3 &#32465;&#23450;&#23646;&#24615;&#21040;Session</a></span></dt>
+                     <dt><span class="section"><a href="ch18s04.html">18.4. PLT.18.4 &#19982;Web Application HttpSession&#30340;&#20851;&#31995;</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch18s04.html#d0e989">18.4.1. PLT.18.4.1 HttpSession&#26144;&#23556;&#26041;&#27861;</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch18s05.html">18.5. PLT.18.5 Writing to the Portlet Session</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch18s05.html#d0e999">18.5.1. PLT.18.5.1 Process action and process event phase</a></span></dt>
+                           <dt><span class="section"><a href="ch18s05s02.html">18.5.2. PLT.18.5.2 Rendering phase</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch18s06.html">18.6. PLT.18.6 Reserved HttpSession Attribute Names</a></span></dt>
+                     <dt><span class="section"><a href="ch18s07.html">18.7. PLT.18.7 Session Timeouts&#36229;&#26102;&#35774;&#23450;</a></span></dt>
+                     <dt><span class="section"><a href="ch18s08.html">18.8. PLT.18.8 &#26368;&#21518;&#19968;&#27425;&#35775;&#38382;&#26102;&#38388;</a></span></dt>
+                     <dt><span class="section"><a href="ch18s09.html">18.9. PLT.18.9 Important Session Semantics&#35821;&#20041;</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch19.html">19. PLT.19 &#20998;&#21457;&#35831;&#27714;&#21040;Servlets &#21644; JSPs</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch19.html#d0e1034">19.1. PLT.19.1 Obtaining a PortletRequestDispatcher</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch19.html#d0e1039">19.1.1. PLT.19.1.1 Query Strings in Request Dispatcher Paths</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch19s02.html">19.2. PLT.19.2 Using a Request Dispatcher</a></span></dt>
+                     <dt><span class="section"><a href="ch19s03.html">19.3. PLT.19.3 &#21253;&#21547;&#26041;&#27861;</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch19s03.html#d0e1054">19.3.1. PLT.19.3.1 &#21253;&#21547;&#35831;&#27714;&#21442;&#25968;</a></span></dt>
+                           <dt><span class="section"><a href="ch19s03s02.html">19.3.2. PLT.19.3.2 &#21253;&#21547;&#35831;&#27714;&#23646;&#24615;</a></span></dt>
+                           <dt><span class="section"><a href="ch19s03s03.html">19.3.3. PLT.19.3.3 Request and Response Objects for Included Servlets &#25110; JSPs from within the Action and Event processing Methods</a></span></dt>
+                           <dt><span class="section"><a href="ch19s03s04.html">19.3.4. PLT.19.3.4 Request and Response Objects for Included Servlets&#25110;JSPs from within the Render Method</a></span></dt>
+                           <dt><span class="section"><a href="ch19s03s05.html">19.3.5. PLT.19.3.5 Request and Response Objects for Included Servlets &#25110; JSPs from within the ServeResource Method</a></span></dt>
+                           <dt><span class="section"><a href="ch19s03s06.html">19.3.6. PLT.19.3.6 &#19981;&#21516;&#30340;Included&#35831;&#27714;&#20998;&#21457;&#30340;&#27604;&#36739;</a></span></dt>
+                           <dt><span class="section"><a href="ch19s03s07.html">19.3.7. PLT.19.3.7 &#38169;&#35823;&#22788;&#29702;</a></span></dt>
+                           <dt><span class="section"><a href="ch19s03s08.html">19.3.8. PLT.19.3.8 Path and Query Information in Included &#25110; Forwarded Servlets</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch19s04.html">19.4. PLT.19.4 &#36716;&#21521;&#26041;&#27861;</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch19s04.html#d0e1099">19.4.1. PLT.19.4.1 &#26597;&#35810;&#23383;&#31526;&#20018;</a></span></dt>
+                           <dt><span class="section"><a href="ch19s04s02.html">19.4.2. PLT.19.4.2 Forwarded &#35831;&#27714;&#21442;&#25968;</a></span></dt>
+                           <dt><span class="section"><a href="ch19s04s03.html">19.4.3. PLT.19.4.3 Request and Response Objects for Forwarded Servlets&#25110;JSPs from within the Action and Event processing Methods</a></span></dt>
+                           <dt><span class="section"><a href="ch19s04s04.html">19.4.4. PLT.19.4.4 Request and Response Objects for Forwarded Servlets&#25110;JSPs from within the Render Method</a></span></dt>
+                           <dt><span class="section"><a href="ch19s04s05.html">19.4.5. PLT.19.4.5 Request and Response Objects for Forwarded Servlets&#25110;JSPs from within the ServeResource Method</a></span></dt>
+                           <dt><span class="section"><a href="ch19s04s06.html">19.4.6. &#19981;&#21516;&#30340;Forwards&#35831;&#27714;&#20998;&#21457;&#30340;&#27604;</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch19s05.html">19.5. PLT.19.5 Servlet&#36807;&#28388;&#22120;&#21644;&#35831;&#27714;&#20998;&#21457;</a></span></dt>
+                     <dt><span class="section"><a href="ch19s06.html">19.6. PLT.19.6 Session&#20316;&#29992;&#22495;&#20869; Include/Forwarded&#40664;&#35748;&#34892;&#20026;&#36716;&#25442;</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch20.html">20. PLT.20 Portlet&#36807;&#28388;&#22120;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch20.html#d0e1144">20.1. PLT.20.1 &#20160;&#20040;&#26159;portlet&#36807;&#28388;&#22120;?</a></span></dt>
+                     <dt><span class="section"><a href="ch20s02.html">20.2. PLT.20.2 &#20027;&#35201;&#30340;&#27010;&#24565;</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch20s02.html#d0e1154">20.2.1. &#36807;&#28388;&#22120;&#29983;&#21629;&#21608;&#26399;</a></span></dt>
+                           <dt><span class="section"><a href="ch20s02s02.html">20.2.2. &#35831;&#27714;&#19982;&#22238;&#24212;&#30340;&#21253;&#35013;</a></span></dt>
+                           <dt><span class="section"><a href="ch20s02s03.html">20.2.3. &#36807;&#28388;&#22120;&#29615;&#22659;</a></span></dt>
+                           <dt><span class="section"><a href="ch20s02s04.html">20.2.4. Portlet&#24212;&#29992;&#20013;&#37197;&#32622;&#19968;&#20010;&#36807;&#28388;&#22120;</a></span></dt>
+                           <dt><span class="section"><a href="ch20s02s05.html">20.2.5. &#23450;&#20041;&#19968;&#20010;&#36807;&#28388;&#22120;&#30446;&#24405;&#30340;&#26041;&#27861;</a></span></dt>
+                        </dl>
+                     </dd>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch21.html">21. &#29992;&#25143;&#20449;&#24687;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch21.html#d0e1184">21.1. PLT.21.1 Defining User Attributes</a></span></dt>
+                     <dt><span class="section"><a href="ch21s02.html">21.2. &#35775;&#38382;&#29992;&#25143;&#23646;&#24615;</a></span></dt>
+                     <dt><span class="section"><a href="ch21s03.html">21.3. PLT.21.3 Important Note on User Information</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch22.html">22. &#32531;&#23384;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch22.html#d0e1204">22.1. Expiration Cache&#21628;&#20986;&#32531;&#23384;</a></span></dt>
+                     <dt><span class="section"><a href="ch22s02.html">22.2. &#30830;&#35748;&#32531;&#23384;</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch23.html">23. Portlet&#24212;&#29992;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch23.html#d0e1219">23.1. &#19982;Web&#24212;&#29992;&#30340;&#20851;&#31995;</a></span></dt>
+                     <dt><span class="section"><a href="ch23s02.html">23.2. &#19982;PortletContext&#30340;&#20851;&#31995;</a></span></dt>
+                     <dt><span class="section"><a href="ch23s03.html">23.3. Porlet&#24212;&#29992;&#21407;&#29702;</a></span></dt>
+                     <dt><span class="section"><a href="ch23s04.html">23.4. &#30446;&#24405;&#32467;&#26500;</a></span></dt>
+                     <dt><span class="section"><a href="ch23s05.html">23.5. Porlet&#24212;&#29992;&#31867;&#35013;&#36733;</a></span></dt>
+                     <dt><span class="section"><a href="ch23s06.html">23.6. Porlet&#24212;&#29992;Archive&#25991;&#20214;</a></span></dt>
+                     <dt><span class="section"><a href="ch23s07.html">23.7. Porlet&#24212;&#29992;&#37096;&#26257;&#25551;&#36848;</a></span></dt>
+                     <dt><span class="section"><a href="ch23s08.html">23.8. Porlet&#24212;&#29992;&#26356;&#25442;</a></span></dt>
+                     <dt><span class="section"><a href="ch23s09.html">23.9. &#38169;&#35823;&#22788;&#29702;</a></span></dt>
+                     <dt><span class="section"><a href="ch23s10.html">23.10. Porlet&#24212;&#29992;&#29615;&#22659;</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch24.html">24. &#23433;&#20840;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch24.html#d0e1274">24.1. &#20171;&#32461;</a></span></dt>
+                     <dt><span class="section"><a href="ch24s02.html">24.2. &#35282;&#33394;</a></span></dt>
+                     <dt><span class="section"><a href="ch24s03.html">24.3. PLT.24.3 Programmatic Security</a></span></dt>
+                     <dt><span class="section"><a href="ch24s04.html">24.4. PLT.24.4 Specifying Security Constraints</a></span></dt>
+                     <dt><span class="section"><a href="ch24s05.html">24.5. Propagation of Security Identity in EJBTM Calls</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch25.html">25. &#25171;&#21253;&#21644;&#37096;&#26257;&#25551;&#36848;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch25.html#d0e1304">25.1. PLT.25.1 Portlet and Web Application Deployment Descriptor</a></span></dt>
+                     <dt><span class="section"><a href="ch25s02.html">25.2. &#25171;&#21253;</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch25s02.html#d0e1314">25.2.1. &#23454;&#20363;&#30446;&#24405;&#32467;&#26500;</a></span></dt>
+                           <dt><span class="section"><a href="ch25s02s02.html">25.2.2. PLT.25.2.2 Version Information</a></span></dt>
+                        </dl>
+                     </dd>
+                     <dt><span class="section"><a href="ch25s03.html">25.3. Portlet&#37096;&#26257;&#25551;&#36848;&#21407;&#29702;</a></span></dt>
+                     <dt><span class="section"><a href="ch25s04.html">25.4. PLT.25.4 Rules for processing the Portlet Deployment Descriptor</a></span></dt>
+                     <dt><span class="section"><a href="ch25s05.html">25.5. Portlet&#37096;&#26257;&#25551;&#36848;</a></span></dt>
+                     <dt><span class="section"><a href="ch25s06.html">25.6. PLT.25.6 Pictures of the structure of a Deployment Descriptor</a></span></dt>
+                     <dt><span class="section"><a href="ch25s07.html">25.7. Uniqueness of Deployment Descriptor Values</a></span></dt>
+                     <dt><span class="section"><a href="ch25s08.html">25.8. PLT.25.8 Localization &#26412;&#22320;&#21270;</a></span></dt>
+                     <dt><span class="section"><a href="ch25s09.html">25.9. &#37096;&#26257;&#25551;&#36848;&#20363;&#23376;</a></span></dt>
+                     <dt><span class="section"><a href="ch25s10.html">25.10. &#36164;&#28304;&#32465;&#23450;</a></span></dt>
+                     <dt><span class="section"><a href="ch25s11.html">25.11. &#36164;&#28304;&#32465;&#23450;&#20363;&#23376;</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch26.html">26. PLT.26 Portlet&#26631;&#31614;&#24211;</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch26.html#d0e1374">26.1. PLT.26.1 defineObjects Tag</a></span></dt>
+                     <dt><span class="section"><a href="ch26s02.html">26.2. PLT.26.2 actionURL Tag</a></span></dt>
+                     <dt><span class="section"><a href="ch26s03.html">26.3. renderURL Tag</a></span></dt>
+                     <dt><span class="section"><a href="ch26s04.html">26.4. resourceURL &#26631;&#31614;</a></span></dt>
+                     <dt><span class="section"><a href="ch26s05.html">26.5. namespace &#26631;&#31614;</a></span></dt>
+                     <dt><span class="section"><a href="ch26s06.html">26.6. param &#26631;&#31614;</a></span></dt>
+                     <dt><span class="section"><a href="ch26s07.html">26.7. property &#26631;&#31614;</a></span></dt>
+                     <dt><span class="section"><a href="ch26s08.html">26.8. Changing the Default Behavior for escapeXml</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="chapter"><a href="ch27.html">27. PLT.27 Leveraging JAXB for Event payloads</a></span></dt>
+               <dt><span class="chapter"><a href="ch28.html">28. PLT.28 Technology Compatibility Kit Requirements</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch28.html#d0e1424">28.1. PLT.28.1 TCK Test Components</a></span></dt>
+                     <dt><span class="section"><a href="ch28s02.html">28.2. PLT.28.2 TCK Requirements</a></span></dt>
+                     <dd>
+                        <dl>
+                           <dt><span class="section"><a href="ch28s02.html#d0e1434">28.2.1. PLT.28.2.1 Declarative configuration of the portal page for a TCK test</a></span></dt>
+                           <dt><span class="section"><a href="ch28s02s02.html">28.2.2. PLT.28.2.2 Programmatic configuration of the portal page for a test</a></span></dt>
+                           <dt><span class="section"><a href="ch28s02s03.html">28.2.3. PLT.28.2.3 Test Portlets Content</a></span></dt>
+                           <dt><span class="section"><a href="ch28s02s04.html">28.2.4. PLT.28.2.4 Test Cases that Require User Identity</a></span></dt>
+                        </dl>
+                     </dd>
+                  </dl>
+               </dd>
+               <dt><span class="appendix"><a href="apa.html">A. PLT.A Custom Portlet Modes</a></span></dt>
+               <dt><span class="appendix"><a href="apb.html">B. PLT.B Markup Fragments</a></span></dt>
+               <dt><span class="appendix"><a href="apc.html">C. PLT.C CSS Style Definitions</a></span></dt>
+               <dt><span class="appendix"><a href="apd.html">D. PLT.D User Information Attribute Names</a></span></dt>
+               <dt><span class="appendix"><a href="ape.html">E. PLT.E Deployment Descriptor Version 1.0</a></span></dt>
+               <dt><span class="appendix"><a href="apf.html">F. PLT.F TCK Assertions</a></span></dt>
+            </dl>
+         </div>
+      </div>
+      <div class="navfooter">
+         <hr>
+         <table width="100%" summary="Navigation footer">
+            <tr>
+               <td width="40%" align="left">&nbsp;</td>
+               <td width="20%" align="center">&nbsp;</td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="preface-copyright.html">&#19979;&#19968;&#39029;</a></td>
+            </tr>
+            <tr>
+               <td width="40%" align="left" valign="top">&nbsp;</td>
+               <td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.sonatype.com/" title="Sonatype: Build Success for your Enterprise">Sponsored by Sonatype
+                                                                </a></span></td>
+               <td width="40%" align="right" valign="top">&nbsp;&#29256;&#26435;</td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,66 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   
+      <title>20.2.2.&nbsp;&#35831;&#27714;&#19982;&#22238;&#24212;&#30340;&#21253;&#35013;</title>
+      <meta name="generator" content="DocBook XSL-NS Stylesheets V1.73.2">
+      <link rel="start" href="public-book.html" title="JavaTM Portlet Specification 2.0">
+      <link rel="up" href="ch20s02.html" title="20.2.&nbsp;PLT.20.2 &#20027;&#35201;&#30340;&#27010;&#24565;">
+      <link rel="prev" href="ch20s02.html" title="20.2.&nbsp;PLT.20.2 &#20027;&#35201;&#30340;&#27010;&#24565;">
+      <link rel="next" href="ch20s02s03.html" title="20.2.3.&nbsp;&#36807;&#28388;&#22120;&#29615;&#22659;">
+   </head>
+   <body>
+      <div class="navheader">
+         <table width="100%" summary="Navigation header">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="ch20s02.html">20.2.&nbsp;PLT.20.2 &#20027;&#35201;&#30340;&#27010;&#24565;</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="public-book.html">
+                     												TOC
+                                                          </a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="ch20s02s03.html">20.2.3.&nbsp;&#36807;&#28388;&#22120;&#29615;&#22659;</a></td>
+            </tr>
+         </table>
+      </div>
+      <div class="section" lang="zh-CN">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h3 class="title"><a name="d0e1159"></a>20.2.2.&nbsp;&#35831;&#27714;&#19982;&#22238;&#24212;&#30340;&#21253;&#35013;
+                  </h3>
+               </div>
+            </div>
+         </div>
+         <p>
+            						Central to the notion of filtering is the concept of wrapping a request or response in order
+            that it can override behavior to perform a filtering task. In this model, the developer has
+            the ability to override existing methods on the request and response objects. The portlet
+            should not add additional methods to the wrapper as further downstream wrappers may
+            not honor these. In order to support this style of filter the container must support the
+            following requirement. When a filter invokes the doFilter method on the portlet
+            container&#8217;s filter chain implementation, the container must ensure that the request and
+            response object that it passes to the next component in the filter chain, or to the target
+            portlet if the filter was the last in the chain, is the same object that was passed into the
+            doFilter method by the calling filter or one of the above mentioned wrappers. ccxcvi
+            					
+         </p>
+      </div>
+      <div class="navfooter">
+         <hr>
+         <table width="100%" summary="Navigation footer">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="ch20s02.html">&#19978;&#19968;&#39029;</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="public-book.html">&#36215;&#22987;&#39029;</a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="ch20s02s03.html">&#19979;&#19968;&#39029;</a></td>
+            </tr>
+            <tr>
+               <td width="40%" align="left" valign="top">20.2.&nbsp;PLT.20.2 &#20027;&#35201;&#30340;&#27010;&#24565;&nbsp;</td>
+               <td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.sonatype.com/" title="Sonatype: Build Success for your Enterprise">Sponsored by Sonatype
+                                                                </a></span></td>
+               <td width="40%" align="right" valign="top">&nbsp;20.2.3.&nbsp;&#36807;&#28388;&#22120;&#29615;&#22659;</td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

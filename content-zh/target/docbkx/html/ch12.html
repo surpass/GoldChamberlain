@@ -1,0 +1,180 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   
+      <title>&#31532;&nbsp;12&nbsp;&#31456;&nbsp;Portlet Responses</title>
+      <meta name="generator" content="DocBook XSL-NS Stylesheets V1.73.2">
+      <link rel="start" href="public-book.html" title="JavaTM Portlet Specification 2.0">
+      <link rel="up" href="public-book.html" title="JavaTM Portlet Specification 2.0">
+      <link rel="prev" href="ch11s07.html" title="11.7.&nbsp;PLT.11.7 Lifetime of the Request Objects">
+      <link rel="next" href="ch12s02.html" title="12.2.&nbsp;PLT.12.2 StateAwareResponse Interface">
+   </head>
+   <body>
+      <div class="navheader">
+         <table width="100%" summary="Navigation header">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="ch11s07.html">11.7.&nbsp;PLT.11.7 Lifetime of the Request Objects</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="public-book.html">
+                     												TOC
+                                                                 </a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="ch12s02.html">12.2.&nbsp;PLT.12.2 StateAwareResponse Interface</a></td>
+            </tr>
+         </table>
+      </div>
+      <div class="chapter" lang="zh-CN">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title"><a name="d0e684"></a>&#31532;&nbsp;12&nbsp;&#31456;&nbsp;Portlet Responses
+                  </h2>
+               </div>
+            </div>
+         </div>
+         <div class="toc">
+            <dl>
+               <dt><span class="section"><a href="ch12.html#d0e689">12.1. PLT.12.1 PortletResponse Interface</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch12.html#d0e694">12.1.1. PLT.12.1.1 Response Properties Response&#23646;&#24615;</a></span></dt>
+                     <dt><span class="section"><a href="ch12.html#d0e699">12.1.2. PLT.12.1.2 Encoding of URLs URLs&#32534;&#30721;</a></span></dt>
+                     <dt><span class="section"><a href="ch12.html#d0e704">12.1.3. PLT.12.1.3 &#21629;&#21517;&#31354;&#38388;</a></span></dt>
+                     <dt><span class="section"><a href="ch12.html#d0e709">12.1.4. PLT.12.1.4 Setting Cookies&#35774;&#32622;Cookies</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="section"><a href="ch12s02.html">12.2. PLT.12.2 StateAwareResponse Interface</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch12s02.html#d0e719">12.2.1. PLT.12.2.1 Render Parameters</a></span></dt>
+                     <dt><span class="section"><a href="ch12s02s02.html">12.2.2. PLT.12.2.2 Portlet Modes and Window State Changes Portlet&#27169;&#24335;&#19982;&#31383;&#21475;&#29366;&#24577;&#36716;&#25442;</a></span></dt>
+                     <dt><span class="section"><a href="ch12s02s03.html">12.2.3. PLT.12.2.3 Publishing Events&#20844;&#20849;&#20107;&#20214;</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="section"><a href="ch12s03.html">12.3. PLT.12.3 ActionResponse Interface</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch12s03.html#d0e739">12.3.1. PLT.12.3.1 Redirections</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="section"><a href="ch12s04.html">12.4. PLT.12.4 EventResponse Interface</a></span></dt>
+               <dt><span class="section"><a href="ch12s05.html">12.5. PLT.12.5 MimeResponse Interface</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch12s05.html#d0e754">12.5.1. PLT.12.5.1 Content Type&#20869;&#23481;&#31867;&#22411;</a></span></dt>
+                     <dt><span class="section"><a href="ch12s05s02.html">12.5.2. PLT.12.5.2 Output Stream and Writer Objects</a></span></dt>
+                     <dt><span class="section"><a href="ch12s05s03.html">12.5.3. PLT.12.5.3 Access to Response Headers&#21709;&#24212;&#22836;&#30340;&#20351;&#29992;</a></span></dt>
+                     <dt><span class="section"><a href="ch12s05s04.html">12.5.4. PLT.12.5.4 Setting Markup Head Elements</a></span></dt>
+                     <dt><span class="section"><a href="ch12s05s05.html">12.5.5. PLT.12.5.5 Buffering&#32531;&#20914;</a></span></dt>
+                     <dt><span class="section"><a href="ch12s05s06.html">12.5.6. PLT.12.5.6 Predefined MimeResponse Properties</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="section"><a href="ch12s06.html">12.6. PLT.12.6 RenderResponse Interface</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch12s06.html#d0e789">12.6.1. PLT.12.6.1 Portlet Title</a></span></dt>
+                     <dt><span class="section"><a href="ch12s06s02.html">12.6.2. PLT.12.6.2 Next possible portlet modes</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="section"><a href="ch12s07.html">12.7. PLT.12.7 ResourceResponse Interface</a></span></dt>
+               <dd>
+                  <dl>
+                     <dt><span class="section"><a href="ch12s07.html#d0e804">12.7.1. PLT.12.7.1 Setting the Response Character Set&#35774;&#32622;&#21709;&#24212;&#23383;&#31526;&#38598;</a></span></dt>
+                  </dl>
+               </dd>
+               <dt><span class="section"><a href="ch12s08.html">12.8. PLT.12.8 Lifetime of Response Objects</a></span></dt>
+            </dl>
+         </div>
+         <p>
+            		...
+            	
+         </p>
+         <div class="section" lang="zh-CN">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both"><a name="d0e689"></a>12.1.&nbsp;PLT.12.1 PortletResponse Interface
+                     </h2>
+                  </div>
+               </div>
+            </div>
+            <p>
+               				...
+               			
+            </p>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e694"></a>12.1.1.&nbsp;PLT.12.1.1 Response Properties Response&#23646;&#24615;
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e699"></a>12.1.2.&nbsp;PLT.12.1.2 Encoding of URLs URLs&#32534;&#30721;
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e704"></a>12.1.3.&nbsp;PLT.12.1.3 &#21629;&#21517;&#31354;&#38388;
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+            <div class="section" lang="zh-CN">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a name="d0e709"></a>12.1.4.&nbsp;PLT.12.1.4 Setting Cookies&#35774;&#32622;Cookies
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  					...
+                  				
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="navfooter">
+         <hr>
+         <table width="100%" summary="Navigation footer">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="ch11s07.html">&#19978;&#19968;&#39029;</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="public-book.html">&#36215;&#22987;&#39029;</a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="ch12s02.html">&#19979;&#19968;&#39029;</a></td>
+            </tr>
+            <tr>
+               <td width="40%" align="left" valign="top">11.7.&nbsp;PLT.11.7 Lifetime of the Request Objects&nbsp;</td>
+               <td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.sonatype.com/" title="Sonatype: Build Success for your Enterprise">Sponsored by Sonatype
+                                                                </a></span></td>
+               <td width="40%" align="right" valign="top">&nbsp;12.2.&nbsp;PLT.12.2 StateAwareResponse Interface</td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>
