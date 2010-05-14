@@ -1,70 +1,260 @@
-<?xml version='1.0' encoding="utf-8"?>
-<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="zh-CN"
-	 xmlns:xlink="http://www.w3.org/1999/xlink"
-	 xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>PLT.1 Preface 前言</title>	
-	<para>
-		。。。
-	</para>
-		<section>
-			<title>PLT.1.1 Additional Sources</title>
-			<para>
-				。。。
-			</para>
-		</section>
-		<section>
-			<title>PLT.1.2 Who Should Read This Specification</title>
-			<para>
-				。。。
-			</para>
-		</section>
-		<section>
-			<title>PLT.1.3 API Reference API参考</title>
-			<para>
-				。。。
-			</para>
-		</section>
-		<section>
-			<title>其它Java平台规范</title>
-			<para>
-				The following Java API specifications are referenced throughout this specification:
-				• Java 2 Platform, Enterprise Edition, v1.4 (J2EE™)
-				• Java Servlet™, v2.4
-				• JavaServer Pages™, v2.0 (JSP™)
-				• The Java™ Architecture for XML Binding (JAXB) 2.0
-				These specifications may be found at the Java 2 Platform Enterprise Edition website:
-				http://java.sun.com/j2ee/.
-				PLT.1.5 Other Important References
-			</para>
-		</section>
-		<section>
-			<title>Other Important References</title>
-			<para>
-				。。。
-			</para>
-		</section>
-		<section>
-			<title>PLT.1.6 Terminology 术语</title>
-			<para>
-				。。。
-			</para>
-		</section>
-		<section>
-			<title>Providing Feedback</title>
-			<para>
-				。。。
-			</para>
-		</section>
-		<section>
-			<title>Acknowledgements V 2.0</title>
-			<para>
-				。。。
-			</para>
-		</section>
-		<section>
-			<title>Acknowledgements V1.0</title>
-			<para>
-				。。。
-			</para>
-		</section>
+<?xml version="1.0" encoding="utf-8"?>
+<chapter version="5.0" xml:lang="zh-CN" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:ns5="http://www.w3.org/1999/xhtml"
+         xmlns:ns4="http://www.w3.org/2000/svg"
+         xmlns:ns3="http://www.w3.org/1998/Math/MathML"
+         xmlns:ns="http://docbook.org/ns/docbook">
+  <title>PLT.1 Preface 前言</title>
+
+  <para>。。。</para>
+
+  <section>
+    <title>PLT.1.1 Additional Sources</title>
+
+    <para>The specification is intended to be a complete and clear explanation
+    of Java portlets, but if questions remain the following may be
+    consulted:</para>
+
+    <para>A reference implementation (RI) has been made available which
+    provides a behavioral benchmark for this specification. Where the
+    specification leaves implementation of a particular feature open to
+    interpretation, implementators may use the reference implementation as a
+    model of how to carry out the intention of the specification</para>
+
+    <para>A Technology Compatibility Kit (TCK) has been provided for assessing
+    whether implementations meet the compatibility requirements of the JavaTM
+    Portlet API standard. The test results have normative value for resolving
+    questions about whether an implementation is standard</para>
+
+    <para>If further clarification is required, the working group for the
+    JavaTM Portlet API under the Java Community Process should be consulted,
+    and is the final arbiter of such issues</para>
+
+    <para>Comments and feedback are welcomed, and will be used to improve
+    future versions.</para>
+  </section>
+
+  <section>
+    <title>PLT.1.2 Who Should Read This Specification</title>
+
+    <para>The intended audience for this specification includes the following
+    groups:</para>
+
+    <para>a. Portal server vendors that want to provide portlet containers
+    that conform to this standard</para>
+
+    <para>b.Authoring tool developers that want to support web applications
+    that conform to this specification</para>
+
+    <para>c.Experienced portlet authors who want to understand the underlying
+    mechanisms of portlet technology</para>
+
+    <para>We emphasize that this specification is not a user’s guide for
+    portlet developers and is not intended to be used as such.</para>
+  </section>
+
+  <section>
+    <title>PLT.1.3 API Reference API参考</title>
+
+    <para>An accompanying javadoc™, includes the full specifications of
+    classes, interfaces, and method signatures.</para>
+
+    <para></para>
+  </section>
+
+  <section>
+    <title>其它Java平台规范</title>
+
+    <para>The following Java API specifications are referenced throughout this
+    specification:</para>
+
+    <para>1.Java 2 Platform, Enterprise Edition, v1.4 (J2EE™)</para>
+
+    <para>2.Java Servlet™, v2.4</para>
+
+    <para>3.JavaServer Pages™, v2.0 (JSP™)</para>
+
+    <para>4.The Java™ Architecture for XML Binding (JAXB) 2.0</para>
+
+    <para>These specifications may be found at the Java 2 Platform Enterprise
+    Edition website: http://java.sun.com/j2ee/.</para>
+  </section>
+
+  <section>
+    <title>Other Important References</title>
+
+    <para>The following Internet specifications provide information relevant
+    to the development and implementation of the Portlet API and standard
+    portlet engines:</para>
+
+    <para>1.RFC 1630 Uniform Resource Identifiers (URI)</para>
+
+    <para>2.RFC 1766 Tags for the Identification of Languages</para>
+
+    <para>3.RFC 1738 Uniform Resource Locators (URL)</para>
+
+    <para>4.RFC 2396 Uniform Resource Identifiers (URI): Generic Syntax</para>
+
+    <para>5.RFC 1808 Relative Uniform Resource Locators</para>
+
+    <para>6.RFC 1945 Hypertext Transfer Protocol (HTTP/1.0)</para>
+
+    <para>7.RFC 2045 MIME Part One: Format of Internet Message Bodies</para>
+
+    <para>8.RFC 2046 MIME Part Two: Media Types</para>
+
+    <para>9.RFC 2047 MIME Part Three: Message Header Extensions for non-ASCII
+    text</para>
+
+    <para>10.RFC 2048 MIME Part Four: Registration Procedures</para>
+
+    <para>11.RFC 2049 MIME Part Five: Conformance Criteria and Examples</para>
+
+    <para>12.RFC 2109 HTTP State Management Mechanism</para>
+
+    <para>13.RFC 2145 Use and Interpretation of HTTP Version Numbers</para>
+
+    <para>14.RFC 2145 Use and Interpretation of HTTP Version Numbers</para>
+
+    <para>15.RFC 2616 Hypertext Transfer Protocol (HTTP/1.1)</para>
+
+    <para>16.RFC 2617 HTTP Authentication: Basic and Digest
+    Authentication</para>
+
+    <para>17.ISO 639 Code for the representation of names of languages</para>
+
+    <para>18.ISO 3166 Code (Country) list</para>
+
+    <para>19.OASIS Web Services for Remote Portlets (WSRP)</para>
+
+    <para>20.CC/PP Processing, JSR 188</para>
+
+    <para>21.W3C: Composite Capability/Preference Profiles (CC/PP): Structure
+    and Vocabularies</para>
+
+    <para>Online versions of these RFC and ISO documents are at:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>http://www.rfc-editor.org/</para>
+      </listitem>
+
+      <listitem>
+        <para>http://www.ics.uci.edu/pub/ietf/http/related/iso639.txt</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>http://www.iso.org/iso/en/prods-services/iso3166ma/index.html</para>
+
+    <para></para>
+
+    <para></para>
+
+    <itemizedlist>
+      <listitem>
+        <para>l</para>
+
+        <para>The World Wide Web Consortium (http://www.w3.org/) is a
+        definitive source of HTTP related information affecting this
+        specification and its implementations.</para>
+
+        <para>The WSRP Specification can be found in the OASIS web site
+        (http://www.oasis-open.org/).</para>
+
+        <para>The Extensible Markup Language (XML) is used for the
+        specification of the Deployment Descriptors described in Chapter 13 of
+        this specification. More information about XML can be found at the
+        following websites:</para>
+
+        <para>http://java.sun.com/xml </para>
+
+        <para>http://www.xml.org/</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
+    <title>PLT.1.6 Terminology 术语</title>
+
+    <para>The key words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD,
+    SHOULD NOT, RECOMMENDED, MAY, and OPTIONAL in this document are to be
+    interpreted as described in [RFC2119].</para>
+  </section>
+
+  <section>
+    <title>PLT.1.7 Providing Feedback 信息反馈</title>
+
+    <para>We welcome any and all feedback about this specification. Please
+    e-mail your comments to jsr-286-comments@jcp.org.</para>
+
+    <para>我们欢迎关于这个规范的任何和所有信息反馈，请发送你的评论到我们的邮件jsr-286-comments@jcp.org.</para>
+
+    <para>Please note that due to the volume of feedback that we receive, you
+    will not normally receive a reply from an engineer. However, each and
+    every comment is read, evaluated, and archived by the specification
+    team.</para>
+
+    <para></para>
+  </section>
+
+  <section>
+    <title>PLT.1.8 Acknowledgements V 2.0 鸣谢</title>
+
+    <para>The Portlet Specification V2.0 was the result of the work of JSR286
+    Expert Group,</para>
+
+    <para>Subbu Allamaraju, Wesley Budziwojski, Bob Butler, Siddharth
+    Chaudhary(Vignette), Padmanabh Dabke,</para>
+
+    <para>David H. DeWolf, Torsten Dettborn, Craig Doremus, Ate Douma, Jorge
+    Ferrer (Liferay, 30 LLC), Michael Freedman (Oracle), Kevin Frender (BEA
+    Systems), Slava Frid, Deepak</para>
+
+    <para>Gothe(Sun Microsystems, Inc.), Vishal Goenka (SunGard Higher
+    Education), Stefan Hepper (IBM Corp.), Martin Holzner (Novell, Inc.),
+    Danny Machak (TIBCO Software Inc.), Kito D. Mann, Benjamin Mestrallet (eXo
+    Platform SARL), Stephen Millidge, Jason Novotny, Punit Pandey, Ilya Rybak
+    (SAP AG), Charles Severance, Hani Suleiman, David Sean Taylor (Apache
+    Software Foundation), Julien Viet(JBoss, Inc.), James Ward (Adobe Systems
+    Inc.), Carsten Ziegeler (Day).</para>
+
+    <para>We want to give special thanks to (as members of the Expert Group)
+    Subbu Allamaraju, Wesley Budziwojski, Craig Doremus, Ate Douma, Michael
+    Freedman, Kevin Frender for their major contributions to this
+    specification.</para>
+
+    <para>Finally we would like to thank Torsten Dettborn (University of Jena)
+    who led the TCK and RI efforts</para>
+  </section>
+
+  <section>
+    <title>PLT.1.9 Acknowledgements V1.0</title>
+
+    <para>The Portlet Specification V1.0 was the result of the work of JSR168
+    Expert Group, Subbu Allamaraju (BEA), Chris Braun (Novell), Don Chapman
+    (SAS), Michael Freedman (Oracle), Laurent Guiraud (SAP), Randal Hanford
+    (Boeing), Andre Kramer (Citrix), Axel Kratel (Borland), Danny Machak
+    (TIBCO), Kris Meukens (EDS), Wes Mitchell (Broadvision), Takao Mohri
+    (Fujitsu), Dean Moses (Vignette), Andrew Rickard (ATG), William Seiger
+    (Sybase), David Sean Taylor (Apache), Stefan Hepper (IBM) and Alejandro
+    Abdelnur (Sun).</para>
+
+    <para>We want to give special thanks to (as members of the Expert Group)
+    Subbu Allamaraju, Henning Blohm, Chris Braun, Don Chapman, Adrian
+    Fletcher, Michael Freedman, Laurent Guiraud, Andre Kramer, Danny Machak,
+    Wes Mitchell, Takao Mohri, Dean Moses, Peter Petersen, Andrew Rickard and
+    David Sean Taylor for their contributions.</para>
+
+    <para>We would like to thank OASIS WSRP Technical Committee, JSR127 Java
+    Server Faces Expert Group and JSR154 Servlet Specification Expert Group
+    for their cooperation.</para>
+
+    <para>We would also like to thank all the people who have sent us feedback
+    during the Community Review and Public Review stages.</para>
+
+    <para> Finally we would like to thank Maneesha Jain (Sun) and Stephan
+    Hesmer (IBM) who led the TCK and RI efforts.</para>
+  </section>
 </chapter>
