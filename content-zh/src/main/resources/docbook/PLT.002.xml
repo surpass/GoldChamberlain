@@ -8,7 +8,7 @@
          xmlns:ns="http://docbook.org/ns/docbook">
   <title>PLT.2 Overview</title>
 
-  <para>。。。</para>
+  <para></para>
 
   <section>
     <title>PLT.2.1 What is a Portal?什么是Portal</title>
@@ -119,7 +119,7 @@
     compatibility with V 1.0. This means that all portlets written against the
     V 1.0 specification can run unchanged. Portlet V2.0 containers must
     support deploying JSR 168 portlets and the JSR 168 deployment 25
-    descriptor. </para>
+    descriptor.</para>
 
     <para>The only exceptions to this rule are:</para>
 
@@ -173,25 +173,510 @@
       <title>PLT.2.6.1 Clarifications that may make V1.0 Portlets
       Non-compliant</title>
 
-      <para>。。。</para>
+      <para>Depending on the implementation of the portlet of a specific
+      runtime behavior of a portlet container the following clarifications may
+      lead to different results when executing a portlet in either a JSR 168
+      or a JSR 286 container:</para>
+
+      <para></para>
+
+      <itemizedlist>
+        <listitem>
+          <para>XML escaping of portlet URLs produced via the portlet tag
+          library. V 2.0 clarifies that the default is all portlet URLs are
+          XML escaped. The default can be changed with the new attribute
+          escapeXML. JSR 168 portlets depending on the fact that portlet URLs
+          created via the tag library are not XML escaped can change the
+          default to non-escaped via the portlet container runtime option
+          javax.portlet.escapeXml (see PLT.26.7)</para>
+        </listitem>
+
+        <listitem>
+          <para>Defining multiple values for the same parameter name in the
+          Portlet param tag. V 2.0 clarifies that if the same name of a
+          parameter occurs more than once within an actionURL, renderURL or
+          resourceURL the values must be delivered as parameter value array
+          with the values in the order of the declaration within the URL tag.
+          Portlets assuming that the last occurrence wins and replaces the
+          previous set values will behave differently in V2.0
+          containers.</para>
+        </listitem>
+
+        <listitem>
+          <para>getProtocol for included servlets / JSPs no longer returns
+          null. V 2.0 defines that getProtocol now returns ‘HTTP/1.1’ and thus
+          is better aligned with the servlet model that expects the
+          getProtocol to return this value in the GenericServlet.</para>
+        </listitem>
+
+        <listitem>
+          <para>Parameters set on the portlet URL and the post body are
+          aggregated into the request parameter set. Portlet URL parameters
+          are presented before post body data. JSR 168 did not define if and
+          how post body and portlet URL parameters are being merged. The added
+          clarification mirrors the behavior defined in the servlet
+          specification for servlets.</para>
+        </listitem>
+
+        <listitem>
+          <para>RenderResponse.setContentType is no longer required before
+          calling getWriter or getOutputstream. Calling getWriter or
+          getOutputstream without previously setting the content type will no
+          longer result in an IllegalStateException.</para>
+        </listitem>
+      </itemizedlist>
     </section>
 
     <section>
       <title>PLT.2.6.2 Changes to the Programming Model</title>
 
-      <para>。。。</para>
+      <para>The following additions were made to the V1.0 programming
+      model:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Use application level resource bundles instead of inline
+          localization in the portlet.xml.</para>
+
+          <para>In V1.0 the only ability to localize values on the portlet
+          application level was inside the portlet.xml using the xml:lang
+          attribute. With V2.0 portlet application developers can now provide
+          the localized values in a resource bundle and thus have the
+          localized values in separate files instead of cluttering the
+          deployment descriptor.</para>
+        </listitem>
+      </itemizedlist>
     </section>
 
     <section>
       <title>PLT.2.6.3 List of all Changes in the Specification</title>
 
-      <para>。。。</para>
+      <para>This section list all changes that are not editorial in
+      nature:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>s</para>
+        </listitem>
+
+        <listitem>
+          <para>s</para>
+        </listitem>
+
+        <listitem>
+          <para>s</para>
+        </listitem>
+
+        <listitem>
+          <para>s</para>
+        </listitem>
+
+        <listitem>
+          <para>s</para>
+        </listitem>
+
+        <listitem>
+          <para>s</para>
+        </listitem>
+
+        <listitem>
+          <para>s</para>
+        </listitem>
+      </itemizedlist>
+
+      <para></para>
+
+      <para>s</para>
     </section>
 
     <section>
       <title>PLT.2.6.3 List of all Changes in the Specification</title>
 
-      <para>。。。</para>
+      <para>This section list all non-editorial API changes:</para>
+
+      <para></para>
+
+      <itemizedlist>
+        <listitem>
+          <para>ActionRequest:</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>extends ClientDataRequest</para>
+            </listitem>
+
+            <listitem>
+              <para>added ACTION_NAME constant</para>
+            </listitem>
+
+            <listitem>
+              <para>added getMethod</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>ActionResponse:</para>
+        </listitem>
+
+        <listitem>
+          <para>added new BaseURL interface</para>
+        </listitem>
+
+        <listitem>
+          <para>added new CacheControl interface</para>
+        </listitem>
+
+        <listitem>
+          <para>added new Event interface</para>
+        </listitem>
+
+        <listitem>
+          <para>added new EventInterface interface</para>
+        </listitem>
+
+        <listitem>
+          <para>added new Event</para>
+        </listitem>
+
+        <listitem>
+          <para>GenericPortlet</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>implements ResourceServingPortlet, EventPortlet</para>
+            </listitem>
+
+            <listitem>
+              <para>added new PortletConfig methods</para>
+            </listitem>
+
+            <listitem>
+              <para>added doHeaders method</para>
+            </listitem>
+
+            <listitem>
+              <para>added getNextPossiblePortletModes method</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>added new MimeResponse interface</para>
+        </listitem>
+
+        <listitem>
+          <para>PortalContext</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>added constant MARKUP_HEAD_ELEMENT_SUPPORT</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>PortletConfig</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>added getPublicRenderParameterNames method</para>
+            </listitem>
+
+            <listitem>
+              <para>added getDefaultNamespace method</para>
+            </listitem>
+
+            <listitem>
+              <para>added getPublishingEventQNames method</para>
+            </listitem>
+
+            <listitem>
+              <para>added getProcessingEventQNames method</para>
+            </listitem>
+
+            <listitem>
+              <para>added getSupportedLocales method</para>
+            </listitem>
+
+            <listitem>
+              <para>added getContainerRuntimeOptions method</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>PortletContext</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>added getContainerRuntimeOptions method</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>PortletRequest</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>added constants CCPP_PROFILE, ACTION_PHASE, EVENT_PHASE,
+              RENDER_PHASE, RESOURCE_PHASE, LIFECYCLE_PHASE, RENDER_PART,
+              RENDER_HEADERS, RENDER_MARKUP, ACTION_SCOPE_ID</para>
+            </listitem>
+
+            <listitem>
+              <para>added enum P3PUserInfos</para>
+            </listitem>
+
+            <listitem>
+              <para>added getWindowID method</para>
+            </listitem>
+
+            <listitem>
+              <para>added getCookies method</para>
+            </listitem>
+
+            <listitem>
+              <para>added getPrivateParameterMap method</para>
+            </listitem>
+
+            <listitem>
+              <para>added getPublicParameterMap method</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>PortletRequestDispatcher</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>added include(PortletRequest request, PortletResponse
+              response) method</para>
+            </listitem>
+
+            <listitem>
+              <para>added forward method</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>PortletResponse</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>changed getNamespace: lifetime is now for the portlet
+              window instead just request</para>
+            </listitem>
+
+            <listitem>
+              <para>added addProperty(javax.servlet.http.Cookie cookie)
+              method</para>
+            </listitem>
+
+            <listitem>
+              <para>added addProperty(String key, org.w3c.dom.Element element)
+              method</para>
+            </listitem>
+
+            <listitem>
+              <para>added createElement method</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>PortletSession</para>
+        </listitem>
+
+        <listitem>
+          <para>PortletURL</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>extends BaseURL</para>
+            </listitem>
+
+            <listitem>
+              <para>added add/setProperty methods</para>
+            </listitem>
+
+            <listitem>
+              <para>added getParameterMap</para>
+            </listitem>
+
+            <listitem>
+              <para>added writer methods</para>
+            </listitem>
+
+            <listitem>
+              <para>added getPortletMode method</para>
+            </listitem>
+
+            <listitem>
+              <para>added getWindowState</para>
+            </listitem>
+
+            <listitem>
+              <para>added removePublicRenderParameter method</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>added PortletURLGenerationListener interface</para>
+        </listitem>
+
+        <listitem>
+          <para>added ProcessAction annotation</para>
+        </listitem>
+
+        <listitem>
+          <para>added ProcessEvent annotation</para>
+        </listitem>
+
+        <listitem>
+          <para>added RenderMode annotation</para>
+        </listitem>
+
+        <listitem>
+          <para>RenderRequest</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>added constant ETAG</para>
+            </listitem>
+
+            <listitem>
+              <para>added getETag method</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>RenderResponse</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>extends MimeResponse</para>
+            </listitem>
+
+            <listitem>
+              <para>added constants CACHE_SCOPE, PUBLIC_SCOPE, PRIVATE_SCOPE,
+              ETAG, USE_CACHED_CONTENT, NAMESPACED_RESPONSE,
+              MARKUP_HEAD_ELEMENT,</para>
+            </listitem>
+
+            <listitem>
+              <para>added createResourceURL method</para>
+            </listitem>
+
+            <listitem>
+              <para>added getCacheControl method</para>
+            </listitem>
+
+            <listitem>
+              <para>added setNextPossiblePortletModes method</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>added ResourceRequest interface</para>
+        </listitem>
+
+        <listitem>
+          <para>added ResourceResponse interface</para>
+        </listitem>
+
+        <listitem>
+          <para>added ResourceServingPortlet interface</para>
+        </listitem>
+
+        <listitem>
+          <para>added ResourceURL interface</para>
+        </listitem>
+
+        <listitem>
+          <para>added StateAwareResponse interface</para>
+        </listitem>
+
+        <listitem>
+          <para>added javax.portlet.filter package</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>added ActionFilter interface</para>
+            </listitem>
+
+            <listitem>
+              <para>added ActionRequestWrapper class</para>
+            </listitem>
+
+            <listitem>
+              <para>added ActionResponseWrapper class</para>
+            </listitem>
+
+            <listitem>
+              <para>added EventFilter interface</para>
+            </listitem>
+
+            <listitem>
+              <para>added EventRequestWrapper class</para>
+            </listitem>
+
+            <listitem>
+              <para>added EventResponseWrapper class</para>
+            </listitem>
+
+            <listitem>
+              <para>added FilterConfig interface</para>
+            </listitem>
+
+            <listitem>
+              <para>added FilterChain interface</para>
+            </listitem>
+
+            <listitem>
+              <para>added PortletFilter interface</para>
+            </listitem>
+
+            <listitem>
+              <para>added PortletRequestWrapper class</para>
+            </listitem>
+
+            <listitem>
+              <para>added PortletResponseWrapper class</para>
+            </listitem>
+
+            <listitem>
+              <para>added RenderFilter interface</para>
+            </listitem>
+
+            <listitem>
+              <para>added RenderRequestWrapper class</para>
+            </listitem>
+
+            <listitem>
+              <para>added RenderResponseWrapper class</para>
+            </listitem>
+
+            <listitem>
+              <para>added ResourceFilter interface</para>
+            </listitem>
+
+            <listitem>
+              <para>added ResourceRequestWrapper class</para>
+            </listitem>
+
+            <listitem>
+              <para>added ResourceResponseWrapper class</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </itemizedlist>
     </section>
   </section>
 
